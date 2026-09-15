@@ -11,5 +11,16 @@ body{
 }
 
 body{
-  background-color: #E1EAFF;
+  background-color: FFFFF3;
+}
+
+.navbar {
+  height: 100px;
+  width: 100%;
+  background-color: #fff0f3;
+}
+
+.navbar img{
+  height: 90px;
+  padding: 8px;
 }

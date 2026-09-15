@@ -1,6 +1,10 @@
+import nav from "./components/nav";
+
 const App = () => {
   return (
-    <h1>DigiTalk Infotech</h1>
+    <>
+    {nav()}
+    </>
   );
 };
 
