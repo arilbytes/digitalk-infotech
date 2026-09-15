@@ -1,0 +1,150 @@
+@font-face {
+  font-family: kaka;
+  src: url(./assets/SpecialGothicExpandedOne-Regular.ttf);
+}
+@font-face {
+  font-family: coco;
+  src: url(./assets/InterTight-Medium.ttf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: black;
+}
+html,
+body{
+    height: 100%;
+    width: 100%;
+}
+
+body{
+  background-color: #fdf0d5;
+}
+
+.block{
+  height: 20px;
+  width: 100%;
+  background-color: #780000;
+  display: flex;
+}
+.navbar {
+  height: 100px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar img{
+  height: 90px;
+  padding: 8px;
+  margin-left: 10px;
+}
+
+.navcontents{
+  font-family: coco;
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+  gap: 2vw;
+}
+
+.navcontents h4{
+  font-family: coco;
+  color: #c1121f;
+  padding: 10px 40px;
+  font-weight: 500;
+  position: relative;
+  text-decoration: none;
+  transition: transform 0.25s ease;
+}
+
+.navcontents {
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+  gap: 2vw;
+}
+
+.navcontents h4 {
+  font-family: coco;
+  color: #c1121f;
+  padding: 10px 40px;
+  font-weight: 500;
+  position: relative;
+  text-decoration: none;
+  cursor: pointer;
+
+  /* Text expansion */
+  transition: transform 0.3s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+/* Underline */
+.navcontents h4::after {
+    content: "";
+    position: absolute;
+
+    left: 40px;
+    right: 40px;
+    bottom: 4px;
+
+    height: 1px;
+    background-color: #c1121f;
+
+    /* Start with no width */
+    transform: scaleX(0);
+    transform-origin: center;
+
+    /* Smooth loading effect */
+    transition: transform 0.35s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+/* Hover */
+.navcontents h4:hover {
+    transform: scale(1.06);
+}
+
+.navcontents h4:hover::after {
+    transform: scaleX(1);
+}
+
+.leftcentre{
+  height: 400px;
+  width: 45%;
+  padding: 10px 12px;
+}
+
+.leftcentre #top h4{
+  font-family: kaka;
+  color: #003049;
+  padding-top: 20px;
+  padding-left: 12px;
+  font-size: 18px;
+  word-spacing: 10px;
+}
+.leftcentre #mid h2{
+  font-family: kaka;
+  font-size: 75px;
+  word-spacing: 5px;
+  color: #003049;
+}
+
+.leftcentre #mid h3{
+  font-family: kaka;
+  font-size: 60px;
+  color: #c1121f;
+}
+.leftcentre #bottom h4{
+  font-family: coco;
+  font-size: 29px;
+  padding-top: 10px;
+  color: #003049;
+}
+
+.leftcentre #art1 img{
+  height: 100px;
+  width: 100px;
+}
+
