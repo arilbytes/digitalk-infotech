@@ -1,8 +1,10 @@
+import "./nav.css";
+
 const nav = () => {
   return (
     <div>
         <div className="navbar">
-            <img id="logo" src="./src/assets/main logo.png" alt="" /> 
+            <img id="logo" src="./src/assets/moving logo.gif" alt="" /> 
             <div className="navcontents">
               <h4>HOME</h4>
               <h4>ABOUT US</h4>

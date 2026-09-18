@@ -1,0 +1,115 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body{
+    height: 100%;
+    width: 100%;
+}
+
+.hero{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 400px;
+    width: 100%;
+    position: relative;
+}
+.leftcentre{
+  height: 400px;
+  width: 45%;
+  padding: 10px 12px;
+  margin-left: 40px;
+}
+
+.leftcentre #top h4{
+  font-family: kaka;
+  color: #003049;
+  padding-top: 20px;
+  padding-left: 12px;
+  font-size: 18px;
+  word-spacing: 10px;
+}
+.leftcentre #mid h2{
+  font-family: kaka;
+  font-size: 60px;
+  word-spacing: 5px;
+  color: #003049;
+}
+
+.leftcentre #mid h3{
+  font-family: kaka;
+  font-size: 55px;
+  color: #c1121f;
+}
+.leftcentre #bottom h4{
+  font-family: coco;
+  font-size: 25px;
+  padding-top: 10px;
+  color: #003049;
+  margin-top: 20px;
+}
+
+.leftcentre #circle-loader {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-top: 20px;
+}
+
+.circle {
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    opacity: 0.15;
+    animation: blink 1.8s ease-in-out infinite;
+}
+
+/* Circle colors */
+.circle-1 {
+    background-color: #D80208;
+    animation-delay: 0s;
+}
+
+.circle-2 {
+    background-color: #06A1D3;
+    animation-delay: 0.3s;
+}
+
+.circle-3 {
+    background-color: #658b01;
+    animation-delay: 0.6s;
+}
+
+/* Smooth transparent → color → transparent */
+@keyframes blink {
+    0% {
+        opacity: 0.15;
+        transform: scale(0.9);
+    }
+
+    25% {
+        opacity: 1;
+        transform: scale(1);
+    }
+
+    50% {
+        opacity: 0.15;
+        transform: scale(0.9);
+    }
+
+    100% {
+        opacity: 0.15;
+        transform: scale(0.9);
+    }
+}
+
+.rightcentre{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 100px;
+    height: 550px;
+    width: 50%;
+}
